@@ -1,0 +1,70 @@
+/*variable*/
+$primary-color: #674baf;
+$light-color: #ffffff;
+$font-stack: Helvetica, sans-serif;
+
+/*global*/
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: $primary-color;
+  background-image: url("../images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: $font-stack;
+  color: $light-color;
+}
+
+a {
+  text-decoration: none;
+  color: $light-color;
+  display: inline-block;
+}
+
+//interpolasi
+@mixin button($light-color, $primary-color) {
+  color: $primary-color;
+  width: 150px;
+  padding: 15px 0px;
+  border-radius: 25px;
+  background: $light-color;
+  text-align: center;
+}
+
+//kode
+.container {
+  height: 100vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background: rgba($color: rgb(32, 161, 221), $alpha: 0.5);
+  .content {
+    background: rgba($color: rgb(16, 228, 157), $alpha: 0.5);
+    display: flex;
+    .content__hero {
+      background: rgba($color: rgb(214, 19, 198), $alpha: 0.5);
+      padding-left: 175px;
+    }
+    .content__description {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 75px;
+      padding-right: 160px;
+      .btn {
+        a.btn__primary {
+          @include button($light-color, $primary-color);
+        }
+      }
+    }
+  }
+  .logo {
+    background: rgba($color: rgb(214, 19, 198), $alpha: 0.5);
+    margin-top: 75px;
+    margin-bottom: 100px;
+  }
+}
+
+/*reponsive breakpoint*/

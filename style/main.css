@@ -1,0 +1,79 @@
+/*variable*/
+/*global*/
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #674baf;
+  background-image: url("../images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+}
+
+.container {
+  height: 100vh;
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(32, 161, 221, 0.5);
+}
+
+.container .content {
+  background: rgba(16, 228, 157, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .content .content__hero {
+  background: rgba(214, 19, 198, 0.5);
+  padding-left: 175px;
+}
+
+.container .content .content__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 75px;
+  padding-right: 160px;
+}
+
+.container .content .content__description .btn a.btn__primary {
+  color: #674baf;
+  width: 150px;
+  padding: 15px 0px;
+  border-radius: 25px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.container .logo {
+  background: rgba(214, 19, 198, 0.5);
+  margin-top: 75px;
+  margin-bottom: 100px;
+}
+
+/*reponsive breakpoint*/
+/*# sourceMappingURL=main.css.map */
